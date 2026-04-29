@@ -324,7 +324,10 @@ textarea:focus-visible {
   display: flex; flex-wrap: wrap; gap: 10px;
   margin-bottom: 40px;
 }
-.hero__cta { margin-top: 8px; }
+.hero__cta { 
+  margin-top: 8px; 
+  align-self: flex-start;
+}
 
 /* ============================================================
    Section heads
