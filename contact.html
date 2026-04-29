@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Morgen Health</title>
+  <meta name="description" content="Get in touch with Morgen Health. Send a message and we will get back within a few business days.">
+  <link rel="icon" href="assets/logos/morgen-mark.png" type="image/png">
+  <link rel="stylesheet" href="styles/site.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <nav class="nav" aria-label="Primary">
+    <a href="index.html" class="nav__logo" aria-label="Morgen Health home">
+      <img class="logo-light" src="assets/logos/morgen-logo-horizontal-dark.png" alt="Morgen Health">
+      <img class="logo-dark"  src="assets/logos/morgen-logo-horizontal.png" alt="Morgen Health">
+    </a>
+    <div class="nav__links">
+      <a class="nav__link" href="index.html">Home</a>
+      <a class="nav__link" href="individuals.html">Individuals</a>
+      <a class="nav__link" href="partners.html">Partners</a>
+      <a class="nav__link" href="about.html">About</a>
+      <a class="nav__link is-active" href="contact.html">Contact</a>
+    </div>
+    <a class="btn btn--primary nav__cta" href="#contact-form">Talk to us</a>
+    <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </nav>
+  <div class="nav__overlay" aria-hidden="true">
+    <a class="nav__link" href="index.html">Home</a>
+    <a class="nav__link" href="individuals.html">Individuals</a>
+    <a class="nav__link" href="partners.html">Partners</a>
+    <a class="nav__link" href="about.html">About</a>
+    <a class="nav__link is-active" href="contact.html">Contact</a>
+    <a class="btn btn--primary btn--lg nav__cta" href="#contact-form">Talk to us</a>
+  </div>
+
+  <!-- Hero (dark, so the nav is visible) -->
+  <header id="main-content" class="section section-grad">
+    <div class="container" style="padding-top: 80px;">
+      <span class="eyebrow section__eyebrow">Contact</span>
+      <h1 class="section__title" style="margin-top: 16px;">
+        Let's <span class="text-grad-cool">talk.</span>
+      </h1>
+      <p class="section__lead">
+        If you're an individual seeking care, a payer, an ACO, or an operator who works on the action gap, we want to hear from you.
+      </p>
+    </div>
+  </header>
+
+  <!-- Form -->
+  <section class="section section-light" id="contact-form">
+    <div class="container container-prose">
+      <span class="eyebrow section__eyebrow">Send a message</span>
+      <h2 class="section__title" style="font-size: clamp(28px, 4vw, 44px); margin-top: 16px;">
+        Tell us about what you're working on.
+      </h2>
+      <p class="section__lead" style="margin-top: 16px;">
+        We'll get back within a few business days. For pilot inquiries, mention your timeline and the population you'd test with.
+      </p>
+
+      <!-- Replace the action URL below with your Formspree endpoint:
+           1. Sign up free at https://formspree.io and create a new form.
+           2. Copy the endpoint that looks like https://formspree.io/f/xyzABC123.
+           3. Paste it as the action="" value below.
+           Until you do, the form will fail-open with a friendly Formspree page. -->
+      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+        <div class="form-row">
+          <label class="form-field">
+            <span class="form-label">Name</span>
+            <input type="text" name="name" required autocomplete="name">
+          </label>
+          <label class="form-field">
+            <span class="form-label">Email</span>
+            <input type="email" name="email" required autocomplete="email">
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label class="form-field">
+            <span class="form-label">Organization <span class="form-optional">(optional)</span></span>
+            <input type="text" name="organization" autocomplete="organization">
+          </label>
+          <label class="form-field">
+            <span class="form-label">I'm a…</span>
+            <select name="role" required>
+              <option value="">Choose one</option>
+              <option value="payer">Payer / MA plan</option>
+              <option value="aco">ACO</option>
+              <option value="operator">Operator / population health</option>
+              <option value="partner">Digital health platform</option>
+              <option value="advisor">Advisor / clinician</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+        </div>
+
+        <label class="form-field">
+          <span class="form-label">Message</span>
+          <textarea name="message" rows="6" required placeholder="What problem are you trying to solve, and what would success look like?"></textarea>
+        </label>
+
+        <!-- Honeypot (anti-spam, ignored by Formspree) -->
+        <input type="text" name="_gotcha" style="display:none">
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn--primary btn--lg">Send message</button>
+          <p class="form-fallback">
+            We reply within a few business days. For pilot inquiries, mention your timeline and the population you'd test with.
+          </p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="assets/logos/morgen-logo-horizontal-dark.png" alt="Morgen Health">
+        <p>A personal digital twin for care navigation.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="individuals.html">Individuals</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Audiences</h4>
+        <ul>
+          <li><a href="individuals.html">Individuals</a></li>
+          <li><a href="partners.html">Payers</a></li>
+          <li><a href="partners.html">ACOs</a></li>
+          <li><a href="partners.html">Operators</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="contact.html">Contact us</a></li>
+          <li>Atlanta, GA</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">© 2026 Morgen Health · Atlanta, GA · Pre-seed · MVP live</div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>
