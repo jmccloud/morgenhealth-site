@@ -300,9 +300,9 @@ textarea:focus-visible {
    ============================================================ */
 .hero {
   min-height: 100vh;
-  display: flex; flex-direction: column; justify-content: center;
-  align-items: flex-start;
-  padding-top: 120px;
+  display: flex; flex-direction: column; justify-content: flex-start;
+  padding-top: 160px;
+  padding-bottom: 80px;
 }
 .hero__eyebrow { margin-bottom: 16px; }
 .hero__headline {
