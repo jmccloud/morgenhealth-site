@@ -333,7 +333,7 @@ textarea:focus-visible {
 /* ============================================================
    Section heads
    ============================================================ */
-.section__head { margin-bottom: 48px; max-width: 1200px; }
+.section__head { margin-bottom: 48px; max-width: 1100px; }
 .section__eyebrow { display: inline-block; margin-bottom: 16px; }
 .section__title {
   font-family: var(--font-display);
@@ -342,12 +342,14 @@ textarea:focus-visible {
   letter-spacing: -0.02em;
   font-weight: var(--weight-bold);
   margin: 0;
+  max-width: 1100px;
+  text-wrap: balance;
 }
 .section__lead {
   font-size: clamp(17px, 1.4vw, 20px);
   line-height: 1.55;
   margin-top: 24px;
-  max-width: 800px;
+  max-width: 880px;
 }
 
 /* ============================================================
