@@ -425,6 +425,8 @@ textarea:focus-visible {
   font-weight: var(--weight-bold);
   color: var(--white);
   margin: 0;
+  min-height: 2.4em; /* reserve 2 lines so all stage titles align */
+  text-wrap: balance;
 }
 .stage__body {
   font-size: var(--text-sm);
@@ -438,6 +440,10 @@ textarea:focus-visible {
   border-left: 2px solid var(--stage-color, #8CC2FF);
   background: var(--stage-bg, rgba(140,194,255,0.08));
   border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  min-height: 104px; /* fit the tallest stat (2-line top + 2-line sub) so all boxes align */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .stage__stat-top {
   font-family: var(--font-display);
