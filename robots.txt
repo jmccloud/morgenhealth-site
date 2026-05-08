@@ -1,0 +1,5 @@
+# Morgen Health robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://morgenhealth.com/sitemap.xml
